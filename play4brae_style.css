@@ -1,0 +1,93 @@
+	.container { max-width:720px; }
+	body { background-color: #543d6b; }
+	.appName { color: white; align-items: center; }
+	.appName h2 div { text-align: center; }
+	.event-card, .comments-card { margin-bottom: 20px; }
+	.btn-success { float:right; margin-right: 1rem; }
+	.remove-btn, .clear-event { float: right; }
+	.totals-row { font-weight: bold; }
+	.input-group-text { min-width: 85px; justify-content: end; }  
+	.italic { font-size: 0.75rem; font-style: italic; }
+	.simple-section, .additional-other { display: none; }
+	optgroup[label="Additional In"] { background-color:#dbf1cc; }
+	optgroup[label="Additional Out"] { background-color:#f5c5c5; }
+	.is-invalid { border: 1px solid red !important; }  
+	.logo-img {
+		max-width: 200px;   /* desktop max width */
+		height: auto;
+		display: block;
+		margin: 0 auto 1rem auto; /* center and add bottom margin */
+		border: 2px solid white;
+		border-radius: 100px;
+	}
+	.submitter { width: 35% }
+	.sticky-bottom {
+		background-color: black;
+		margin: 0rem 1rem;
+		color:white;
+		padding: 0 1rem 0 1rem;
+	}
+	.overall-total-cash-amount, .overall-total-revenue-amount {
+		font-style: italic;
+	}
+	.recaptcha-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.dn {
+		display: none;
+	}
+
+	#thankYou {
+		display:none; 
+		text-align:center; 
+		margin-top:2rem;
+		color: white;
+	}  
+  
+	/* Mobile Compact Styles */
+	@media (max-width: 576px) {
+		.event-card, .comments-card {
+			padding: 0.5rem 0.75rem; /* smaller card padding */
+		}
+		.event-card .card-body {
+			padding: 0.5rem 0.5rem;
+		}
+		.btn, .form-control, .form-select { 
+			margin-bottom: 0.25rem; 
+			font-size: 0.9rem; 
+		}
+		.remove-btn, .clear-event { 
+			float: none !important; 
+			display: block; 
+			width: 100%; 
+			margin-top: 0.25rem; 
+			font-size: 0.85rem;
+			padding: 0.25rem 0.5rem;
+		}
+		.totals-row { 
+			font-size: 0.9rem; 
+			margin-top: 0.25rem;
+		}
+		.input-group-text { 
+			font-size: 0.85rem; 
+			padding: 0.2rem 0.4rem; 
+			margin-bottom: 0.25rem;
+		}
+		textarea.form-control { 
+			min-height: 80px; 
+			font-size: 0.9rem; 
+		}
+		.breakdown-section > .row > div { 
+			flex: 0 0 100%; 
+			max-width: 100%; 
+			margin-bottom: 0.25rem; 
+		}
+		.simple-section .input-group { margin-bottom: 0.25rem; }
+		h5.card-title { font-size: 1rem; margin-bottom: 0.25rem; }
+		.logo-img {
+			max-width: 120px;
+			margin-bottom: 0.5rem;
+		}
+	}
