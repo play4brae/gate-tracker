@@ -284,12 +284,7 @@ $(document).ready(function(){
 	  e.preventDefault(); 
 	  $(".dn").hide();
 	  
-		// Get the reCAPTCHA response
-		var response = grecaptcha.getResponse();
-		if(response.length === 0) {
-			$(".dn").show();
-		}
-		else{		
+				
 			$("#overlay").show();
 
 			const events=[];
@@ -336,7 +331,6 @@ $(document).ready(function(){
 				$("#overlay").hide(); 
 				alert("Error submitting form: "+err.message); 
 			});
-		}
 	});
 });
 
