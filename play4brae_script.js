@@ -320,7 +320,7 @@ $(document).ready(function(){
 			const totalRevenue = parseFloat($(".overall-total-revenue-amount").text() || 0);
 			const recaptchaToken = response;
 
-			fetch("https://script.google.com/macros/s/AKfycbxvZRAezvpuxHF0qZnzKqarKksN2YCETBZUBsdo05sHWEa32YeSy4Qy0ckvgI7RW8lQ/exec", { 
+			fetch("https://script.google.com/macros/s/AKfycbwExyr4ia6-u-0aCSKdgF3LcnPgr8_u2wRHGqRujfxnmqI6eVRo8wMl8MFaSvXPzlil/exec", { 
 				method:"POST", mode:"no-cors", headers:{"Content-Type":"application/json"},
 				body: JSON.stringify({events, comments, submitter, totalCashHandedIn, totalRevenue, recaptchaToken})
 			}).then(()=>{
