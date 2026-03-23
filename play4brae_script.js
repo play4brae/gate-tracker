@@ -318,11 +318,10 @@ $(document).ready(function(){
 			const submitter=$(".submitter").val();
 			const totalCashHandedIn = parseFloat($(".overall-total-cash-amount").text() || 0);
 			const totalRevenue = parseFloat($(".overall-total-revenue-amount").text() || 0);
-			const recaptchaToken = response;
 
 			fetch("https://script.google.com/macros/s/AKfycbwExyr4ia6-u-0aCSKdgF3LcnPgr8_u2wRHGqRujfxnmqI6eVRo8wMl8MFaSvXPzlil/exec", { 
 				method:"POST", mode:"no-cors", headers:{"Content-Type":"application/json"},
-				body: JSON.stringify({events, comments, submitter, totalCashHandedIn, totalRevenue, recaptchaToken})
+				body: JSON.stringify({events, comments, submitter, totalCashHandedIn, totalRevenue})
 			}).then(()=>{
 				$("#overlay").hide();
 				$("#cashForm").hide(); 
